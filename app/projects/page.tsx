@@ -48,7 +48,7 @@ const projects = [
   },
    {
     title: "Radharani",
-    description: "Radharani barsana wali using Next.js.",
+    description: "Radharani barsana wali using Next.js. 1",
     image: "/images/Radharani.png",
     liveLink: "https://radharani.vercel.app/",
     githubLink: "https://github.com/Rajmehra725/Radharani",
