@@ -62,11 +62,11 @@ export default function Contact() {
             <FaGithub />
           </motion.a>
 
-          <motion.a whileHover={{ scale: 1.2 }} href="https://linkedin.com/">
+          <motion.a whileHover={{ scale: 1.2 }} href="https://www.linkedin.com/in/raj-mehra-181a80233/">
             <FaLinkedin />
           </motion.a>
 
-          <motion.a whileHover={{ scale: 1.2 }} href="https://instagram.com">
+          <motion.a whileHover={{ scale: 1.2 }} href="https://www.instagram.com/itzzzme_raazzz/#">
             <FaInstagram />
           </motion.a>
         </div>

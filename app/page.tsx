@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Typewriter } from "react-simple-typewriter";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import Profile from "@/app/profile.webp"
+
 export default function Home() {
   return (
     <main className="relative flex flex-col items-center justify-center min-h-screen text-center overflow-hidden">
@@ -74,10 +75,10 @@ export default function Home() {
         <motion.a whileHover={{ scale: 1.3 }} href="https://github.com/Rajmehra725">
           <FaGithub />
         </motion.a>
-        <motion.a whileHover={{ scale: 1.3 }} href="https://linkedin.com">
+        <motion.a whileHover={{ scale: 1.3 }} href="https://www.linkedin.com/in/raj-mehra-181a80233/">
           <FaLinkedin />
         </motion.a>
-        <motion.a whileHover={{ scale: 1.3 }} href="https://instagram.com">
+        <motion.a whileHover={{ scale: 1.3 }} href="https://www.instagram.com/itzzzme_raazzz/">
           <FaInstagram />
         </motion.a>
       </motion.div>
@@ -97,11 +98,14 @@ export default function Home() {
         </Link>
 
         <Link
-          href="/resume"
+          href="/resume.pdf"
+          target="_blank"
+          download
           className="bg-white text-black px-6 py-3 rounded-lg font-medium hover:bg-gray-200 transition"
         >
           Download Resume
         </Link>
+
       </motion.div>
 
       {/* ⬇ Scroll Indicator */}
