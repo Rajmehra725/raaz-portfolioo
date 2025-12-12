@@ -81,7 +81,7 @@ export default function Contact() {
           className="mt-8 flex items-center justify-center gap-3 bg-green-500 text-white py-3 px-6 rounded-xl text-lg font-semibold shadow-lg hover:bg-green-600 transition w-full"
         >
           <FaWhatsapp size={28} />
-          Send Message on WhatsApp
+          Send Message on WhatsApp msg
         </motion.a>
       </motion.div>
 
