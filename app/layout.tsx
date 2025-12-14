@@ -55,31 +55,49 @@ export default function RootLayout({
       >
         {/* Floating Background Glow Balls */}
         <div className="pointer-events-none fixed inset-0 overflow-hidden -z-10">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-purple-500 opacity-20 blur-3xl rounded-full animate-pulse"></div>
-          <div className="absolute bottom-10 right-10 w-72 h-72 bg-blue-500 opacity-20 blur-3xl rounded-full animate-ping"></div>
+          <div className="absolute top-20 left-10 w-52 sm:w-72 h-52 sm:h-72 bg-purple-500 opacity-20 blur-3xl rounded-full animate-pulse"></div>
+          <div className="absolute bottom-10 right-10 w-52 sm:w-72 h-52 sm:h-72 bg-blue-500 opacity-20 blur-3xl rounded-full animate-ping"></div>
         </div>
 
-        {/* Navbar (Client Component call allowed) */}
+        {/* Navbar */}
         <header className="w-full backdrop-blur-xl bg-white/10 shadow-xl sticky top-0 z-50 border-b border-white/10">
-          <nav className="max-w-6xl mx-auto flex justify-between items-center p-4">
-            <h1 className="text-2xl font-semibold tracking-wide">
+          <nav className="max-w-6xl mx-auto flex flex-wrap justify-between items-center p-4">
+            <h1 className="text-xl sm:text-2xl font-semibold tracking-wide">
               Raj<span className="text-blue-400">Mehra</span>
             </h1>
 
-            <ul className="flex gap-6 font-medium text-lg">
-              <li><a href="/" className="hover:text-blue-400 transition">Home</a></li>
-              <li><a href="/projects" className="hover:text-blue-400 transition">Projects</a></li>
-              <li><a href="/about" className="hover:text-blue-400 transition">About</a></li>
-              <li><a href="/contact" className="hover:text-blue-400 transition">Contact</a></li>
+            <ul className="flex gap-4 sm:gap-6 font-medium text-sm sm:text-lg mt-3 sm:mt-0">
+              <li>
+                <a href="/" className="hover:text-blue-400 transition">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="/projects" className="hover:text-blue-400 transition">
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a href="/about" className="hover:text-blue-400 transition">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="/contact" className="hover:text-blue-400 transition">
+                  Contact
+                </a>
+              </li>
             </ul>
           </nav>
         </header>
 
         {/* Main Content */}
-        <main className="max-w-6xl mx-auto px-4">{children}</main>
+        <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          {children}
+        </main>
 
-        {/* Animated Footer */}
-        <footer className="mt-20 py-10 text-center text-white/70 text-sm">
+        {/* Footer */}
+        <footer className="mt-16 sm:mt-20 py-8 sm:py-10 text-center text-white/70 text-xs sm:text-sm">
           <p className="animate-pulse">
             © {new Date().getFullYear()} Raj Mehra — All Rights Reserved
           </p>
